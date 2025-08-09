@@ -1,40 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>UPCOMMING EVENtS</title>
-    <link rel="icon.Webp" href="icon.webp">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Events</title>
+    <link rel="icon" href="icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ENHANCED PROFESSIONAL STYLES 
+        */
+
+        /* -- Color Palette -- */
+        :root {
+            --bg-color: #f4f7f6;        /* Light grey background for a soft look */
+            --card-bg-color: #ffffff;   /* White for content cards to make them pop */
+            --primary-text-color: #333333; /* Dark grey for readable text */
+            --accent-color: #0056b3;     /* A professional blue for links and highlights */
+            --accent-hover-color: #003d82;/* A darker blue for hover effects */
+            --border-color: #dddddd;     /* Subtle border color */
+        }
+
+        /* -- General Body Styling -- */
+        body {
+            background-color: var(--bg-color);
+            color: var(--primary-text-color);
+            font-family: 'Lato', Arial, sans-serif; /* Using the imported 'Lato' font */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* -- Layout Container -- */
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* -- Header & Footer Styling -- */
+        header, footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        
+        footer {
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* -- Typography -- */
+        h1 {
+            font-size: 2.8em;
+            color: var(--primary-text-color);
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 25px;
+        }
+
+        /* -- Event Card Styling -- */
+        .event-section {
+            background-color: var(--card-bg-color);
+            margin: 40px 0;
+            padding: 40px;
+            border-radius: 8px;
+            /* Adding a subtle shadow for a "lifting" effect */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            /* Smooth transition for hover effects */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .event-section:hover {
+            transform: translateY(-5px); /* Lifts the card slightly on hover */
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        /* -- Image Styling -- */
+        figure {
+            margin: 20px 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Soft rounded corners for images */
+        }
+
+        figcaption {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        /* -- Event Details List -- */
+        .event-details {
+            list-style: none;
+            padding: 0;
+            margin: 25px 0;
+            font-size: 1.1em;
+            color: #555;
+            font-weight: 700;
+        }
+
+        .event-details li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        /* -- Link & Button Styling -- */
+        .cta-link {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 12px 28px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .cta-link:hover {
+            background-color: var(--accent-hover-color);
+            transform: translateY(-2px); /* Slight lift on button hover */
+        }
+        
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body bgcolor="black" style="color: white;"> 
-    <center>
-    <h1>UPCOMMING EVENT 🗓️</h1>
-   <p>
-     Dont forget to do any of your important tasks.here are the importent event.Make sure you do everythink for your importent event.
-     </p>
- </center>
-    <hr>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, officiis? Laboriosam nam deleniti dignissimos maxime? Iure, deleniti! Repellendus facilis quia maiores accusantium minima numquam illum inventore. Soluta voluptate dolorum eveniet.</p>
-<center>
-<img src="first img.webp" >
-<h1>PHOTO GALLERY EVENT</h1>
-<h2>Free Food \Free Entry\Pet Not Allowed</h2>
-</center>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aspernatur debitis cum, ratione excepturi itaque doloremque ea provident consequuntur repudiandae ipsam libero neque ab fuga asperiores dolores fugiat officiis dicta!</p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem rem ad, eligendi distinctio saepe itaque possimus sapiente velit totam doloremque nesciunt voluptatem commodi corrupti? Excepturi consequatur soluta aliquid quam?
-<center>
-<img src="photo.jpg" width="500"><br>
-<a  style="color: blue;" href="https://www.google.com/search?sca_esv=6d2215782c6bedf0&q=photo+editing+apps&source=lnms&fbs=AIIjpHyTFN8BbSyNXQ3oA-fn7H5NW3qndllSdjBCzNaKqRdVgk_-YagBT484Vi0ic4pmTBZ1Tlzjgmq3nciDVfu73ZC8XzOuM-oxMkEJ94Zp6Z76TjCfsyR8sUyLr8qIEdrd1NboP3FjBnz9T2NWp2SH2PZRtKvfLldeHUK-JNmQeZYFxzrCErDOqG8qIMxuryaFKhlzpaTMqH7-FX_LorQvYe9Gi_u_tc5aUTGSqbjrB7GmJyfDw7k&sa=X&ved=2ahUKEwjH5_Pl_-WOAxWLzTgGHf_MCacQ0pQJegQIDxAB&biw=1536&bih=730&dpr=1.25">ALL EDITING APPS</a>
-</center>
-<center>
-  <h3>Free Food\Free Entry\Pet Not Allowed</h3>
-</center>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A omnis facilis blanditiis? Voluptatem rem eum voluptas facere impedit quasi praesentium dolores alias, eius nobis velit consectetur voluptate voluptates quisquam reiciendis.</p>
-<hr>
-<center>
-    <h1>contact</h1>
-    <h2>9384158758\ha92@gmail.comrikaranhari90</h2>
-    <h3>Thank for cpmming</h3>
-</center>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Upcoming Event 🗓️</h1>
+            <p>Don't miss out on our important upcoming events. Mark your calendars!</p>
+        </header>
+
+        <main>
+            <section class="event-section">
+                
+                <figure>
+                    <img src="first img.webp" alt="A vibrant promotional image for the Photo Gallery Event">
+                    <figcaption>Join us for a visual feast at our gallery.</figcaption>
+                </figure>
+
+                <h2>Photo Gallery Event</h2>
+                
+                <ul class="event-details">
+                    <li>Free Food</li>
+                    <li>Free Entry</li>
+                    <li>Pets Not Allowed</li>
+                </ul>
+
+                <p>This is the perfect place to describe your event. Talk about the artists, the type of photography featured, and what makes this event a must-see for art lovers.</p>
+                <p>You can add more details here, such as the event schedule, special guests, or any other relevant information to attract attendees.</p>
+
+            </section>
+
+            <section class="event-section">
+
+                <h2>Digital Art Workshop</h2>
+
+                <figure>
+                    <img src="photo.jpg" alt="A sample image showcasing photo editing techniques">
+                </figure>
+                
+                <p>This section can describe another event, like a workshop. Explain what attendees will learn, who the instructor is, and what they should bring.</p>
+                
+                <ul class="event-details">
+                    <li>Free Food</li>
+                    <li>Free Entry</li>
+                    <li>Pets Not Allowed</li>
+                </ul>
+
+                <a class="cta-link" href="https://www.google.com/search?q=photo+editing+apps" target="_blank" rel="noopener noreferrer">Find Photo Editing Apps</a>
+            
+            </section>
+        </main>
+
+        <footer>
+            <h2>Contact Us</h2>
+            <p>
+                Phone: <a href="tel:9384158758">938-415-8758</a><br>
+                Email: <a href="mailto:harikaranhari90@gmail.com">harikaranhari90@gmail.com</a>
+            </p>
+            <p>Thank you for visiting!</p>
+        </footer>
+
+    </div>
 
 </body>
-
 </html>
